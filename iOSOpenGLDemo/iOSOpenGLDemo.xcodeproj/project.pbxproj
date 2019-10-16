@@ -18,6 +18,11 @@
 		303D7F912356B22900493D7D /* iOSOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D7F902356B22900493D7D /* iOSOpenGLDemoUITests.m */; };
 		30B4401123570E9A0047DD6C /* for_test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B4401023570E9A0047DD6C /* for_test.jpg */; };
 		30B4401423570EAD0047DD6C /* GLKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4401323570EAD0047DD6C /* GLKitViewController.m */; };
+		30B44018235732D60047DD6C /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 30B44016235732D60047DD6C /* shaderv.vsh */; };
+		30B44019235732D60047DD6C /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 30B44017235732D60047DD6C /* shaderf.fsh */; };
+		30B4401C2357330C0047DD6C /* ShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4401B2357330C0047DD6C /* ShaderViewController.m */; };
+		30B4401F2357333A0047DD6C /* ShaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4401E2357333A0047DD6C /* ShaderView.m */; };
+		30B440222357660C0047DD6C /* LearnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B440212357660C0047DD6C /* LearnView.m */; };
 		30B4CE1F2357098A00F5E838 /* listChart.json in Resources */ = {isa = PBXBuildFile; fileRef = 30B4CE1E2357098A00F5E838 /* listChart.json */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,14 @@
 		30B4401023570E9A0047DD6C /* for_test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = for_test.jpg; sourceTree = "<group>"; };
 		30B4401223570EAD0047DD6C /* GLKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKitViewController.h; sourceTree = "<group>"; };
 		30B4401323570EAD0047DD6C /* GLKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKitViewController.m; sourceTree = "<group>"; };
+		30B44016235732D60047DD6C /* shaderv.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		30B44017235732D60047DD6C /* shaderf.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		30B4401A2357330C0047DD6C /* ShaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderViewController.h; sourceTree = "<group>"; };
+		30B4401B2357330C0047DD6C /* ShaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShaderViewController.m; sourceTree = "<group>"; };
+		30B4401D2357333A0047DD6C /* ShaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderView.h; sourceTree = "<group>"; };
+		30B4401E2357333A0047DD6C /* ShaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShaderView.m; sourceTree = "<group>"; };
+		30B440202357660C0047DD6C /* LearnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnView.h; sourceTree = "<group>"; };
+		30B440212357660C0047DD6C /* LearnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnView.m; sourceTree = "<group>"; };
 		30B4CE1E2357098A00F5E838 /* listChart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = listChart.json; sourceTree = "<group>"; };
 		30B4CE2023570A4600F5E838 /* OpenGLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +125,7 @@
 		303D7F682356B22500493D7D /* iOSOpenGLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				30B44015235732BF0047DD6C /* Shader */,
 				303D7F9E2356B2A300493D7D /* GLKit */,
 				303D7F692356B22500493D7D /* AppDelegate.h */,
 				303D7F6A2356B22500493D7D /* AppDelegate.m */,
@@ -120,6 +134,7 @@
 				303D7F6F2356B22500493D7D /* ViewController.h */,
 				303D7F702356B22500493D7D /* ViewController.m */,
 				30B4CE1E2357098A00F5E838 /* listChart.json */,
+				30B4401023570E9A0047DD6C /* for_test.jpg */,
 				303D7F722356B22500493D7D /* Main.storyboard */,
 				303D7F752356B22900493D7D /* Assets.xcassets */,
 				303D7F772356B22900493D7D /* LaunchScreen.storyboard */,
@@ -151,11 +166,25 @@
 		303D7F9E2356B2A300493D7D /* GLKit */ = {
 			isa = PBXGroup;
 			children = (
-				30B4401023570E9A0047DD6C /* for_test.jpg */,
 				30B4401223570EAD0047DD6C /* GLKitViewController.h */,
 				30B4401323570EAD0047DD6C /* GLKitViewController.m */,
 			);
 			path = GLKit;
+			sourceTree = "<group>";
+		};
+		30B44015235732BF0047DD6C /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				30B44017235732D60047DD6C /* shaderf.fsh */,
+				30B44016235732D60047DD6C /* shaderv.vsh */,
+				30B4401A2357330C0047DD6C /* ShaderViewController.h */,
+				30B4401B2357330C0047DD6C /* ShaderViewController.m */,
+				30B4401D2357333A0047DD6C /* ShaderView.h */,
+				30B4401E2357333A0047DD6C /* ShaderView.m */,
+				30B440202357660C0047DD6C /* LearnView.h */,
+				30B440212357660C0047DD6C /* LearnView.m */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +293,10 @@
 				30B4CE1F2357098A00F5E838 /* listChart.json in Resources */,
 				30B4401123570E9A0047DD6C /* for_test.jpg in Resources */,
 				303D7F792356B22900493D7D /* LaunchScreen.storyboard in Resources */,
+				30B44018235732D60047DD6C /* shaderv.vsh in Resources */,
 				303D7F762356B22900493D7D /* Assets.xcassets in Resources */,
 				303D7F742356B22500493D7D /* Main.storyboard in Resources */,
+				30B44019235732D60047DD6C /* shaderf.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +324,11 @@
 				303D7F712356B22500493D7D /* ViewController.m in Sources */,
 				303D7F6B2356B22500493D7D /* AppDelegate.m in Sources */,
 				303D7F7C2356B22900493D7D /* main.m in Sources */,
+				30B440222357660C0047DD6C /* LearnView.m in Sources */,
 				30B4401423570EAD0047DD6C /* GLKitViewController.m in Sources */,
+				30B4401F2357333A0047DD6C /* ShaderView.m in Sources */,
 				303D7F6E2356B22500493D7D /* SceneDelegate.m in Sources */,
+				30B4401C2357330C0047DD6C /* ShaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
