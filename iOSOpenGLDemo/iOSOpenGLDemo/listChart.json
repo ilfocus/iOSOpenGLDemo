@@ -1,4 +1,5 @@
 [
 	{"title" : "GLKit","ViewController":"GLKitViewController"},
 	{"title" : "Shader","ViewController":"ShaderViewController"},
+	{"title" : "GLKit进阶","ViewController":"AdvanceViewController"},
 ]

@@ -16,6 +16,7 @@
 		303D7F7C2356B22900493D7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D7F7B2356B22900493D7D /* main.m */; };
 		303D7F862356B22900493D7D /* iOSOpenGLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D7F852356B22900493D7D /* iOSOpenGLDemoTests.m */; };
 		303D7F912356B22900493D7D /* iOSOpenGLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D7F902356B22900493D7D /* iOSOpenGLDemoUITests.m */; };
+		3074E49D235815D800F7BFA0 /* AdvanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3074E49B235815D800F7BFA0 /* AdvanceViewController.m */; };
 		30B4401123570E9A0047DD6C /* for_test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30B4401023570E9A0047DD6C /* for_test.jpg */; };
 		30B4401423570EAD0047DD6C /* GLKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4401323570EAD0047DD6C /* GLKitViewController.m */; };
 		30B44018235732D60047DD6C /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 30B44016235732D60047DD6C /* shaderv.vsh */; };
@@ -62,6 +63,8 @@
 		303D7F8C2356B22900493D7D /* iOSOpenGLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOpenGLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303D7F902356B22900493D7D /* iOSOpenGLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSOpenGLDemoUITests.m; sourceTree = "<group>"; };
 		303D7F922356B22900493D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3074E49A235815D800F7BFA0 /* AdvanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvanceViewController.h; sourceTree = "<group>"; };
+		3074E49B235815D800F7BFA0 /* AdvanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvanceViewController.m; sourceTree = "<group>"; };
 		30B4401023570E9A0047DD6C /* for_test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = for_test.jpg; sourceTree = "<group>"; };
 		30B4401223570EAD0047DD6C /* GLKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKitViewController.h; sourceTree = "<group>"; };
 		30B4401323570EAD0047DD6C /* GLKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKitViewController.m; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		303D7F682356B22500493D7D /* iOSOpenGLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3074E4962358128100F7BFA0 /* GLKit进阶 */,
 				30B44015235732BF0047DD6C /* Shader */,
 				303D7F9E2356B2A300493D7D /* GLKit */,
 				303D7F692356B22500493D7D /* AppDelegate.h */,
@@ -170,6 +174,15 @@
 				30B4401323570EAD0047DD6C /* GLKitViewController.m */,
 			);
 			path = GLKit;
+			sourceTree = "<group>";
+		};
+		3074E4962358128100F7BFA0 /* GLKit进阶 */ = {
+			isa = PBXGroup;
+			children = (
+				3074E49A235815D800F7BFA0 /* AdvanceViewController.h */,
+				3074E49B235815D800F7BFA0 /* AdvanceViewController.m */,
+			);
+			path = "GLKit进阶";
 			sourceTree = "<group>";
 		};
 		30B44015235732BF0047DD6C /* Shader */ = {
@@ -327,6 +340,7 @@
 				30B440222357660C0047DD6C /* LearnView.m in Sources */,
 				30B4401423570EAD0047DD6C /* GLKitViewController.m in Sources */,
 				30B4401F2357333A0047DD6C /* ShaderView.m in Sources */,
+				3074E49D235815D800F7BFA0 /* AdvanceViewController.m in Sources */,
 				303D7F6E2356B22500493D7D /* SceneDelegate.m in Sources */,
 				30B4401C2357330C0047DD6C /* ShaderViewController.m in Sources */,
 			);
